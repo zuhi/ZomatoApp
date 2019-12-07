@@ -1,0 +1,45 @@
+<div class="container">
+<div class="display_card" >
+<mat-card class="ccard" *ngFor = "let entry of rest_list | paginate:{itemsPerPage: 2, currentPage:p}; ">
+    
+    
+
+    <img mat-card-image class="img_card" src="{{entry.image_url}}" alt="Loading for{{entry.name}}">
+    <mat-card-title>{{entry.name}}</mat-card-title>
+    <!-- <star-rating [starType]="'icon'" [rating]="entry.rating"></star-rating> -->
+    <!-- <ngb-rating [(rate)]="5"></ngb-rating> -->
+    <!-- <div (onclick)=""></div> -->
+    
+    <!-- <div class="stars" style="--rating: {{entry.rating}};" aria-label="Rating of this product is 2.3 out of 5."></div> -->
+    <star-rating value="{{entry.ratings}}" checkedcolor="yellow" uncheckedcolor="black" size="24px"    readonly="true" ></star-rating>
+    <mat-card-content>Ratings({{entry.ratings}})</mat-card-content>
+    <mat-card-content>Average costs for two:<fa-icon [icon]="['fas','hamburger']"></fa-icon> {{entry.avg_cost}}</mat-card-content>
+    
+    <!-- <ngb-rating [(rate)]="entry.rating"[readonly]="true"></ngb-rating>
+    <hr>
+    <pre>Rate: <b>{{entry.rating}}</b></pre> -->
+    <!-- <ngb-rating [(rate)]="{{entry.ratings}}" [readonly]="true"></ngb-rating> -->
+    <!-- <star-rating value="5" checkedcolor="red" uncheckedcolor="black" size="24px" readonly="true" [ratingvalue]>{{entry.ratings}}</star-rating> -->
+    <mat-card-content><strong>Cusines: </strong>{{entry.cusines}}</mat-card-content>
+    <mat-card-content>Locality: {{entry.loaclity}}</mat-card-content>
+    <mat-card-content>Availibility: {{entry.timings}}</mat-card-content>
+    
+    <!-- <i class="fas fa-camera"></i>
+    <i class="fal fa-axe">Constuction</i>
+    <fa name="cog" animation="spin"></fa>
+    <span class="fas fa-camera"></span>  -->
+    <a class="btn btn-danger" (click)="delete(entry.id)">
+        <i class="fa fa-trash-o fa-lg"></i> </a>
+    <!-- <mat-icon fontSet="fa" fontIcon="fa-clipboard-check"></mat-icon> -->
+    <!-- <button mat-fab >
+        <mat-icon></mat-icon>
+    </button> -->
+    <!-- <button mat-icon-button (click)="click_fav(entry.id)">
+        <mat-icon>favorite</mat-icon>
+    </button>
+     -->
+    
+</mat-card>
+</div>
+<pagination-controls (pageChange)="p=$event"></pagination-controls>
+</div>

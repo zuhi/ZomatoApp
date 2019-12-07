@@ -1,0 +1,26 @@
+{
+  "favourites": [
+    {
+      "id": 18994069,
+      "image_url": "https://b.zmtcdn.com/data/pictures/9/18994069/37f087290dff035e46bf3c07e7d12bca.jpg?output-format=webp",
+      "name": "Toy Beach Club",
+      "cusines": "Continental, European, Italian, Japanese, North Indian",
+      "ratings": "4.9",
+      "loaclity": "Candolim",
+      "timings": "9 AM to 2 AM",
+      "avg_cost": 2500
+    },
+    {
+      "id": 18800810,
+      "image_url": "https://b.zmtcdn.com/data/pictures/0/18800810/1f2b0c524d50cec56f01f8af3142cf59.jpg",
+      "name": "The Black Pearl",
+      "cusines": "North Indian, Continental",
+      "ratings": "4.8",
+      "loaclity": "Sholinganallur",
+      "timings": "12noon – 4:30pm, 6:30pm – 12midnight (Mon-Sun)",
+      "avg_cost": 1500,
+      "lon": 80,
+      "lat": 12
+    }
+  ]
+}

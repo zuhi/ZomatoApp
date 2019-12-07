@@ -1,0 +1,48 @@
+.container{
+    position: fixed;
+	top: 50%;
+    width: 280px;
+    height: 80px;
+    margin-top: -140px;
+    margin-left: -170px;
+    left:50%;
+
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189,0.8);
+	box-shadow:	
+		0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 6% 60px 6%;
+    color :black;
+    opacity: 0.6;
+    
+}
+.check{
+    color:red;
+    font-size: 10px;
+}
+.contain_pannel{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+}
+.button_clas{
+    text-align: right;
+    margin: 5px 0;
+    padding: 5px;
+    margin-left: 80%;
+    background-color: #c52c2c; 
+    color: black;
+
+}
+
+.login_container{
+    background-image: url('../../assets/i.jpg');
+    height: 550px;
+}

@@ -1,0 +1,52 @@
+.img_card{
+    /* width: 400px; */
+    height: 355px; 
+}
+.mat_expansion_pannel{
+    width: 45vw;
+    margin:auto;
+}
+.search{
+    background-image: url('../../assets/i.jpg');
+    height: 550px;
+
+
+}
+.container{
+    border-radius: 5px 0 0 5px;
+    padding-left: 2.1em!important;
+    padding-bottom: .89em;
+    padding-top: .92em;
+}
+input[type=text], select, textarea{
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  button {
+    background-color: #e7e7e7; 
+    color: black;
+    
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    /* cursor: pointer;
+    float: right; */
+  }
+  ::placeholder {
+    color:rgb(128, 113, 113);
+    opacity: 1; 
+  }
+  .ccard{
+
+  
+    border: 1px solid whitesmoke;
+    
+}
+agm-map{
+  height:100px;
+  width: 100px;
+}

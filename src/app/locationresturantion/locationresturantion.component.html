@@ -1,0 +1,74 @@
+<div class="search">
+<div class="container">
+        <form class="location_entry" [formGroup]="location_entry" (ngSubmit)="locationSubmit()">
+            
+            <label class="contain_pannel">
+            <input type="text" class ="location" matInput [formControl]="location" placeholder="Type the search city" color= "black">
+            <div *ngIf="location.invalid && (location.dirty || location.touched)" class="alert alert-danger">
+                <div *ngIf="location.errors.required">
+                    Loaction is required.
+                </div>
+            </div>
+            </label>
+        <button type="submit" class ="button_clas"  [disabled]='!location_entry.valid' mat-raised-button color="primary">Search</button>     
+        </form>
+    </div>
+</div>
+
+
+
+    <mat-expansion-panel class="mat_expansion_pannel" >
+        <mat-expansion-panel-header>
+        <mat-panel-title>Search Results 
+             <fa-icon [icon]="['fas', 'bell']"></fa-icon>
+            <fa-icon [icon]="['fas','hamburger']"></fa-icon>
+            <!-- <span class="fas fa-camera"></span>
+            <i class="fad fa-burger-soda"></i> -->
+        </mat-panel-title>
+        </mat-expansion-panel-header>
+    
+        <mat-card class="ccard" *ngFor = "let entry of resturant_inforarray| paginate:{itemsPerPage: 2, currentPage:p};">
+            
+            
+            <div class="view overlay">
+               <img mat-card-image class="img_card" src="{{entry.image_url}}" alt="Loading for{{entry.name}}">
+            </div>
+            
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <mat-card-title>{{entry.name}}</mat-card-title>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <star-rating value="{{entry.ratings}}" checkedcolor="yellow" uncheckedcolor="black" size="24px"    readonly="true" ></star-rating>
+                <mat-card-content>Ratings({{entry.ratings}})</mat-card-content>
+                <mat-card-content>Average costs for two:<fa-icon [icon]="['fas','hamburger']"></fa-icon> {{entry.avg_cost}}</mat-card-content>
+                <mat-card-content><strong>Cusines: </strong>{{entry.cusines}}</mat-card-content>
+                <mat-card-content>Locality: {{entry.loaclity}}</mat-card-content>
+                <mat-card-content>Availibility: {{entry.timings}}</mat-card-content>
+                <div>
+                    <agm-map [latitude]="entry.lat" [longitude]="entry.lon">
+                        <agm-marker [latitude]="entry.lat" [longitude]="entry.lon"></agm-marker>
+                    </agm-map>
+                </div>
+            </mat-expansion-panel>
+            
+            
+            <!-- <mat-icon fontSet="fa" fontIcon="fa-clipboard-check"></mat-icon> -->
+            <!-- <button mat-fab >
+                <mat-icon></mat-icon>
+            </button> -->
+            <button mat-icon-button (click)="click_fav(entry.id)">
+                <mat-icon>favorite</mat-icon>
+            </button>
+            
+            
+        </mat-card>
+        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+        </mat-expansion-panel>
+    </mat-expansion-panel> 
+
+
+
