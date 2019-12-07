@@ -18,7 +18,12 @@ export class AuthenticationService {
   setBearerToken(token) {
 
     localStorage.setItem('authToken', token);
+  
 
+  }
+
+  removeBearerToken() {
+    localStorage.removeItem('authToken');
   }
 
   getBearerToken() {

@@ -17,6 +17,7 @@
         <a mat-list-item [routerLink]="'/login'" > Account </a>
         <a mat-list-item [routerLink]="'/signup'" > Create Account </a>
         <a mat-list-item [routerLink]="'/dashboard'">Dashboard </a>
+        <a mat-list-item (click)="logout()" [routerLink]="''">Logout </a>
         <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
   
       </mat-nav-list>

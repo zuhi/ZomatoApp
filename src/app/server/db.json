@@ -21,6 +21,30 @@
       "avg_cost": 1500,
       "lon": 80,
       "lat": 12
+    },
+    {
+      "id": 130309,
+      "image_url": "https://b.zmtcdn.com/data/pictures/chains/9/130309/8625941e02cfecf4164b2fb12982bb27.jpg",
+      "name": "Purple Martini",
+      "cusines": "Continental, Seafood, Italian, Mediterranean, North Indian",
+      "ratings": "4.9",
+      "loaclity": "Anjuna Beach, Anjuna",
+      "timings": "11 AM to 11 PM",
+      "avg_cost": 1500,
+      "lon": 73,
+      "lat": 15
+    },
+    {
+      "id": 10006,
+      "image_url": "https://b.zmtcdn.com/data/res_imagery/10006_RESTAURANT_OBP(10).jpg",
+      "name": "Bhairavee Pure Veg Restaurant",
+      "cusines": "North Indian, Chinese, Continental, Biryani, Rolls, Desserts, Beverages",
+      "ratings": "4.1",
+      "loaclity": "Baner",
+      "timings": "11am – 3pm, 7pm – 11pm (Mon-Sun)",
+      "avg_cost": 1100,
+      "lon": 73,
+      "lat": 18
     }
   ]
 }
