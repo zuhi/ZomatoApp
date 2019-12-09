@@ -45,6 +45,42 @@
       "avg_cost": 1100,
       "lon": 73,
       "lat": 18
+    },
+    {
+      "id": 2900234,
+      "image_url": "https://b.zmtcdn.com/data/pictures/4/2900234/7ca383f6d977d9c76aa15908789adb36.jpg?output-format=webp",
+      "name": "TCD Restaurant & Banquet",
+      "cusines": "Biryani, Chinese, North Indian",
+      "ratings": "4.1",
+      "loaclity": "Chandrasekharpur",
+      "timings": "11AM to 10:30PM (Mon-Sun)",
+      "avg_cost": 500,
+      "lon": 85,
+      "lat": 20
+    },
+    {
+      "id": 18900638,
+      "image_url": "https://b.zmtcdn.com/data/reviews_photos/b0c/985eec18220a37e194b751e6d8240b0c_1575702497.jpg",
+      "name": "ECDInc.",
+      "cusines": "Italian, Pizza, Burger, Wraps, Sandwich, Beverages",
+      "ratings": "4.1",
+      "loaclity": "Tirumala",
+      "timings": "11am – 11pm (Mon-Sun)",
+      "avg_cost": 200,
+      "lon": 79,
+      "lat": 13
+    },
+    {
+      "id": 18882866,
+      "image_url": "https://b.zmtcdn.com/data/pictures/6/18882866/fbfd274b93f9d129c6c3541d90290f18.jpg",
+      "name": "Ghousia Hotel",
+      "cusines": "Biryani, North Indian, Rolls, Chinese, Desserts",
+      "ratings": "4.5",
+      "loaclity": "Sakchi",
+      "timings": "11 AM to 11 PM",
+      "avg_cost": 200,
+      "lon": 86,
+      "lat": 22
     }
   ]
 }
