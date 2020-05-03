@@ -81,6 +81,30 @@
       "avg_cost": 200,
       "lon": 86,
       "lat": 22
+    },
+    {
+      "id": 16605460,
+      "image_url": "https://b.zmtcdn.com/data/reviews_photos/77e/d8cb8bd43736cfcfdeb2a3a2d50b777e_1526898192.jpg",
+      "name": "Sicilians Cafe Bar & Restaurant",
+      "cusines": "Italian, Mediterranean, Middle Eastern",
+      "ratings": "3.6",
+      "loaclity": "Ararat",
+      "timings": "11 AM to 9 PM (Mon-Thu),11 AM to 9:30 PM (Fri-Sat),Closed (Sun)",
+      "avg_cost": 20,
+      "lon": 142,
+      "lat": -37
+    },
+    {
+      "id": 18901307,
+      "image_url": "https://b.zmtcdn.com/data/reviews_photos/00e/57e2922928436aa5f81c20543321e00e_1546926138.jpg",
+      "name": "Hotel Kohinoor - A legend Since 1956",
+      "cusines": "Biryani",
+      "ratings": "4.0",
+      "loaclity": "Durgapur Locality",
+      "timings": "8am – 11:45pm (Mon-Sun)",
+      "avg_cost": 400,
+      "lon": 87,
+      "lat": 23
     }
   ]
 }

@@ -7,17 +7,25 @@ import { Observable } from 'rxjs';
 })
 export class ZomatoserviceService {
   arryy : Array<any> = [];
+  zomatoAPIkey: string;
   
 
   constructor(private httpClient: HttpClient) {
+    this.httpClient.get<any>('./assets/env/env.json').subscribe((data) =>{
+      this.zomatoAPIkey= data['zomato_api'];
 
+    },
+    error =>{
+      console.log("error of zomato api extraction");
+    }
+      );
    
    }
 
   searchloacationName(place : string): Observable<any> {
 
     return this.httpClient.get<any>(`https://developers.zomato.com/api/v2.1/cities?q=${place}`, {
-      headers: new HttpHeaders().set('user-key', '19cc9aa3a02e0890215865daa4617a0e')
+      headers: new HttpHeaders().set('user-key', `${this.zomatoAPIkey}`)
  });
     
 }
@@ -27,7 +35,7 @@ export class ZomatoserviceService {
   searchresturantsById(place_id: number) {
 
     return this.httpClient.get<any>(`https://developers.zomato.com/api/v2.1/search?entity_id=${place_id}&entity_type=city&count=5`, {
-      headers: new HttpHeaders().set('user-key', '19cc9aa3a02e0890215865daa4617a0e')
+      headers: new HttpHeaders().set('user-key', `${this.zomatoAPIkey}`)
  });
   }
 

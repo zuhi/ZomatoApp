@@ -27,7 +27,7 @@ export class FavouriteserviceService {
 
   fetchNotesFromServer() {
 
-    return this.httpclient.get<Array<Resturants>> ('http://localhost:3000/api/v1/favourites', {headers : new HttpHeaders().set(`Authorization` ,
+    return this.httpclient.get<Array<Resturants>> ('http://localhost:3000/api/favourites', {headers : new HttpHeaders().set(`Authorization` ,
     `Bearer ${this.authServ.getBearerToken()}`)
      }).subscribe((data) => {
        this.rest_list= data;
@@ -44,7 +44,7 @@ export class FavouriteserviceService {
   addfav(note: Resturants): Observable<Resturants> {
 
 
-    return this.httpclient.post<Resturants>('http://localhost:3000/api/v1/favourites', note, {headers : new HttpHeaders().set(`Authorization` ,
+    return this.httpclient.post<Resturants>('http://localhost:3000/api/favourites', note, {headers : new HttpHeaders().set(`Authorization` ,
     `Bearer ${this.authServ.getBearerToken()}`)
    }).do((newnote =>  {
 

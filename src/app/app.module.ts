@@ -2,6 +2,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatNativeDateModule} from '@angular/material/core';
+import * as data from '../assets/env/env.json';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -83,7 +85,8 @@ const routes: Routes = [
     MatInputModule,
     MatIconModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyD1KHu6ky5pSH-qEfBmKlgcFsAlOLNb3EQ'
+      apiKey: data.googleMaps_apiKey
+
     })
     
 
